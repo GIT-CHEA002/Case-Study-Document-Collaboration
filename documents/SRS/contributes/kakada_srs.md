@@ -20,7 +20,7 @@
   ## 4.2 Non-Functional Requirements (NFR)
 
   | ID | Requirement | Category |  Traces to URD |
-  |---|---|---|
+  |---|---|---|---|
   | **SR-NF01** | The application cluster shall maintain **99.99% uptime Mon–Fri**, with automatic failover to a standby node within **5 seconds** of primary node failure. | Product (availability) | UR-NF01 |
   | **SR-NF02** | Each staff member shall authenticate using a Health Authority smart card, which validates the card and extracts the staff member's unique **8-digit employee ID**. | Organizational (security) | UR-NF02 |
   | **SR-NF03** | All patient data shall be encrypted in transit (**TLS 1.3**) and at rest (**AES-256 column-level encryption**). | Product (security/privacy) | UR-NF03 |
