@@ -18,6 +18,17 @@ The book's own justification for why waterfall struggles with certain requiremen
 
 The chapter's summary line — that in practice, most large systems are developed using a process that incorporates elements from all of these models — is exactly the caveat your Stage 3 write-up already leans on: Mentcare as a whole is not "pure" incremental/agile, it's a hybrid, and the incremental/agile element is invoked specifically for the ambiguous, user-facing part (search behavior), not the entire system.
 
+## Stage 3 — Incremental / Agile
+
+*Behavior that needed real usage/feedback to pin down — this is where refinement happens.*
+
+| ID | Why agile |
+|---|---|
+| SR-F01 | The exact timing (17:30, last working day) is an implementation decision beyond what the URD stated — the kind of detail typically settled by testing with actual clinic managers. |
+| SR-F02 | The textbook ambiguity example itself — "search" had to be resolved through clarification, the clearest possible proof of iterative refinement. |
+| SR-F03 | Daily attendance list — fairly direct from the book, but its exact format/fields are the kind of thing usually tuned with real clinic staff feedback. |
+| SR-NF07 | The 2-hour training / 2-error target is a usability goal — usually achieved by testing the UI with real users and adjusting, not fixed on paper on day one. |
+
 ## Reference
 
 - [S5] SlideShare, "Ch 2 Software Engineering"(Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
