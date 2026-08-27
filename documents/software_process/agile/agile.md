@@ -1,4 +1,4 @@
-
+### Author by Sedtha
 
 ## What the model actually is (per Sommerville Ch. 2):
 
