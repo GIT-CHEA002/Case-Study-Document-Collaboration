@@ -31,36 +31,39 @@ Two system purposes:
 
 3. User / Functional Requirements
 
-UR-F01: The system generates monthly management reports showing the number of patients treated at each clinic, patients entered/left the care system, patients sectioned (legally detained), and drugs prescribed and their costs. [S4]
+| ID | Requirement |
+|---|---|
+| UR-F01 | The system generates monthly management reports showing the number of patients treated at each clinic, patients entered/left the care system, patients sectioned (legally detained), and drugs prescribed and their costs. [S4] |
 
-UR-F02: "A user shall be able to search the appointments lists for all clinics." [S2]
+| UR-F02 | "A user shall be able to search the appointments lists for all clinics." [S2] |
 
-UR-F03: "The system shall generate each day, for each clinic, a list of patients who are expected to attend appointments that day." [S2]
+| UR-F03 | "The system shall generate each day, for each clinic, a list of patients who are expected to attend appointments that day." [S2] |
 
-UR-F04: Only authorized medical staff shall be able to access a patient's records, and each staff member's actions within the system shall be identifiable and recorded, so that access and decisions can be reviewed later if required by law (e.g. for judicial review in sectioning cases). [S0]
+| UR-F04 | Only authorized medical staff shall be able to access a patient's records, and each staff member's actions within the system shall be identifiable and recorded, so that access and decisions can be reviewed later if required by law (e.g. for judicial review in sectioning cases). [S0] |
 
-UR-F05: Clinicians can create records for patients, edit information, view
-patient history, and so on. The system supports data summaries so that a doctor who has not previously met a patient can quickly learn about key problems and prescribed treatments. [S0]
+| UR-F05 | Clinicians can create records for patients, edit information, view patient history, and so on. The system supports data summaries so that a doctor who has not previously met a patient can quickly learn about key problems and prescribed treatments. [S0] |
 
-UR-F06: The system uses a centralized database but is also designed to run on a laptop so it can be accessed from sites without secure network connectivity. When connected, it uses the central database; when disconnected, it downloads and uses local copies of patient records. It is not a complete medical records system — it does not maintain information about other medical conditions — but it may interact and exchange data with other clinical information systems. [S0]
+| UR-F06 | The system uses a centralized database but is also designed to run on a laptop so it can be accessed from sites without secure network connectivity. When connected, it uses the central database; when disconnected, it downloads and uses local copies of patient records. It is not a complete medical records system — it does not maintain information about other medical conditions — but it may interact and exchange data with other clinical information systems. [S0] |
 
-UR-F07: "The safety implications stem from the fact that some mental illnesses cause patients to become suicidal or a danger to other people. Wherever possible, the system should warn medical staff about potentially suicidal or dangerous patients. " [S4]
+| UR-F07 | "The safety implications stem from the fact that some mental illnesses cause patients to become suicidal or a danger to other people. Wherever possible, the system should warn medical staff about potentially suicidal or dangerous patients. " [S4] |
 
 The word "search" in requirement 1 is deliberately ambiguous: the user's intended meaning was to search across all clinics, while a developer might interpret it as searching within one individual clinic first. This is used in the book to illustrate why user requirements need refining into precise system requirements. [S2]
 
 4. Non-Functional Requirements
 
-UR-NF01: Product requirement: "The Mentcare system shall be available to all clinics during normal working hours (Mon–Fri, 0830–17.30). Downtime within normal working hours shall not exceed five seconds in any one day." [S3]
+| ID | Requirement |
+|---|---|
+| UR-NF01 | Product requirement: "The Mentcare system shall be available to all clinics during normal working hours (Mon–Fri, 0830–17.30). Downtime within normal working hours shall not exceed five seconds in any one day." [S3] |
 
-UR-NF02: Organizational requirement: "Users of the Mentcare system shall authenticate themselves using their health authority identity card." [S3]
+| UR-NF02 | Organizational requirement: "Users of the Mentcare system shall authenticate themselves using their health authority identity card." [S3] |
 
-UR-NF03: External requirement: "The system shall implement patient privacy provisions as set out in HStan-03-2006-priv." [S2, S3]
+| UR-NF03 | External requirement: "The system shall implement patient privacy provisions as set out in HStan-03-2006-priv." [S2, S3] |
 
-UR-NF04: Infrastructure: "The Mentcare system shall run on hardware (Linux servers) that is available in the authority's data centre." [S4]
+| UR-NF04 | Infrastructure: "The Mentcare system shall run on hardware (Linux servers) that is available in the authority's data centre." [S4] |
 
-UR-NF05: Medical staff shall be able to use all the system functions after two hours of training. After this training, the average number of errors made by experienced users shall not exceed two per hour of system use.[S0]
+| UR-NF05 | Medical staff shall be able to use all the system functions after two hours of training. After this training, the average number of errors made by experienced users shall not exceed two per hour of system use.[S0] |
 
-UR-NF06: "As in all medical systems, privacy is a critical system requirement. It is essential that patient information is confidential and is never disclosed to anyone apart from authorized medical staff and the patient themselves. Hospital managers should not have access to individual patient information." [S4]
+| UR-NF06 | "As in all medical systems, privacy is a critical system requirement. It is essential that patient information is confidential and is never disclosed to anyone apart from authorized medical staff and the patient themselves. Hospital managers should not have access to individual patient information." [S4] |
 
 References
 -[S0] Sommerville, I. (2016) Software Engineering, 10th Edition, Pearson Education Limited, Boston
