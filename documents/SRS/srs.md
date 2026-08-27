@@ -17,7 +17,6 @@
 | **SR-F07** | The system shall support local, offline access to a downloaded copy of patient records at sites without secure network connectivity, syncing once connectivity is restored. | 3.1-8 |
 
 ## 4.2 Non-Functional Requirements (NFR)
----
 
 | ID | Requirement | Category |
 |---|---|---|
@@ -29,3 +28,8 @@
 | **SR-NF06** | Hospital managers shall not have access to individual, identifiable patient information — only aggregated/management-level data. | Organizational (privacy) |
 | **SR-NF07** | New staff shall learn core functions within **2 hours of training**, with a target error rate of no more than **2 errors/hour thereafter**. | Product (usability) |
 | **SR-NF08** | The system shall run on the health authority's designated data centre infrastructure (**Linux-based servers**). | External (infrastructure) |
+---
+## 4.3 Relationship Between Functional and Non-Functional Requirements
+Not every FR has an associated NFR. Where one does apply, the FR must satisfy that constraint at all times — the relationship is not optional once established. For example, SR-F04 (access control/audit logging) is governed by SR-NF02 (smart card authentication) and SR-NF03 (encryption): the action of accessing data is functional, but the rules under which it's permitted are non-functional constraints layered on top.
+
+A single NFR can also govern multiple FRs through different mechanisms depending on data state — SR-NF03 is satisfied via TLS 1.3 (in transit) and AES-256 (at rest): two mechanisms, one underlying privacy rule.
