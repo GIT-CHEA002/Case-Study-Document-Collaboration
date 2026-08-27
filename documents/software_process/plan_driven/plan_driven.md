@@ -1,4 +1,4 @@
-###Edit by Sedtha
+### Edit by Sedtha
 
 What "plan-driven" means
 
@@ -20,7 +20,8 @@ They are externally regulated by two established bodies of law that exist indepe
 They require extensive up-front safety and security analysis — you have to reason about confidentiality, availability, and legal compliance before writing code, not discover the right behavior through iteration, because getting it wrong has legal/clinical consequences, not just a bad user experience.
 The tradeoff itself (Section 9: privacy vs. availability) is a design conflict that must be resolved analytically at the specification stage — it's not something you can "iterate toward" safely, since a half-built compromise could leave either patient data exposed or the system unavailable in an emergency.
 
-Reference 
+### Reference 
+
 [S0] Sommerville, I. (2016) Software Engineering, 10th Edition, Pearson Education Limited, Bosto
 [S5] SlideShare, "Ch 2 Software Engineering"(Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
 [S6] SlideShare, “Ch2 sw processes” (Sommerville Ch. 2 slides) — https://slideshare.net/software-engineering-book/ch2-sw-processes
