@@ -7,4 +7,4 @@ The staff member inserts a Health Authority smart card, after which the system v
 This diagram provides a dynamic representation of SR-NF02 and demonstrates how authentication forms the foundation for the access-control requirement in SR-F04.
 
 Related Requirements: SR-NF02, SR-F04.
-![smart card authentication]('./1_Smart Card Authentication.png')
+![Smart Card Authentication](./1_Smart%20Card%20Authentication.png)

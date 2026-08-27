@@ -9,4 +9,4 @@ The diagram shows the secure network connection between clinics and the data cen
 The standby node provides automatic failover if the primary node fails, supporting the required 99.99% uptime and five-second failover target.
 
 Related Requirements: SR-F07, SR-NF01, SR-NF03, SR-NF04, SR-NF08.
-![deployment]('./deployment.png')
+![deployment](./deployment.png)

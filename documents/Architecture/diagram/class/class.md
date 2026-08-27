@@ -9,4 +9,4 @@ The relationships between these classes describe how patient appointments, consu
 This diagram provides the structural model of the system and supports the implementation of the functional requirements.
 
 Related Requirements: SR-F02, SR-F03, SR-F04, SR-F05, SR-F06, SR-F07.
-![class diagram]('./class.png')
+![class diagram](./class.png)

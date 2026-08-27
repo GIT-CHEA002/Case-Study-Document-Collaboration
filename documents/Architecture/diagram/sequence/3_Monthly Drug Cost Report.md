@@ -9,4 +9,4 @@ The generated report is stored and made available through the healthcare managem
 This diagram provides a dynamic representation of SR-F01, particularly the automated scheduling, data aggregation, and report-generation process.
 
 Related Requirements: SR-F01.
-![monthly drug cost report]('./3_Monthly Drug Cost Report.png')
+![Monthly Drug Cost Report](./3_Monthly%20Drug%20Cost%20Report.png)

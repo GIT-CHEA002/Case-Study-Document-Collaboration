@@ -9,4 +9,4 @@ Staff and clinicians provide authentication and patient-related information to t
 This diagram helps demonstrate the movement and protection of information throughout the system and is particularly relevant to the security, privacy, and data-management requirements.
 
 Related Requirements: SR-F01, SR-F02, SR-F03, SR-F04, SR-F05, SR-F06, SR-F07, SR-NF03, SR-NF06.
-![dfd]('./dfd.png')
+![dfd](./dfd.png)

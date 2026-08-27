@@ -9,4 +9,4 @@ The diagram also shows the databases and external authentication service used by
 This diagram is particularly relevant to the system's availability, security, and maintainability requirements.
 
 Related Requirements: SR-F01, SR-F04, SR-F06, SR-F07, SR-NF01, SR-NF03, SR-NF08.
-![component]('./component.png')
+![component](./component.png)

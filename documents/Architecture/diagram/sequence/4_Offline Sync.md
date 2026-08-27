@@ -9,4 +9,4 @@ After successful synchronization, the local records are marked as synchronized a
 This diagram provides a detailed interaction model for SR-F07.
 
 Related Requirements: SR-F07, SR-F04.
-![offline sync]('./4_Offline Sync.png')
+![Offline Sync](./4_Offline%20Sync.png)

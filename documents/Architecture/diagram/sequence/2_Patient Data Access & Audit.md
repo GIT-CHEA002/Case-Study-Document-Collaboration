@@ -9,4 +9,4 @@ If authorization is denied, the system does not return the patient information a
 This diagram demonstrates how access control and auditing are applied to every patient-data request, directly satisfying the requirements of SR-F04.
 
 Related Requirements: SR-F04, SR-NF02, SR-NF03.
-![patient data access and audit]('./2_Patient Data Access & Audit.png')
+![Patient Data Access and Audit](./2_Patient%20Data%20Access%20%26%20Audit.png)
