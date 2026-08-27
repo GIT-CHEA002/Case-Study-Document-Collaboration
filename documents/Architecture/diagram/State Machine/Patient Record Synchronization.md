@@ -9,4 +9,4 @@ When network connectivity is restored, synchronization begins. A successful sync
 This diagram provides a clear representation of the state transitions required by SR-F07.
 
 Related Requirements: SR-F07, SR-F04.
-![patient record sync](./Patient Record Synchronization.png)
+![patient record sync](./Patient20%Record20%Synchronization.png)
