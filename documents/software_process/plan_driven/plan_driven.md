@@ -23,6 +23,9 @@ The tradeoff itself (Section 9: privacy vs. availability) is a design conflict t
 ### Reference 
 
 [S0] Sommerville, I. (2016) Software Engineering, 10th Edition, Pearson Education Limited, Bosto
+
 [S5] SlideShare, "Ch 2 Software Engineering"(Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
+
 [S6] SlideShare, “Ch2 sw processes” (Sommerville Ch. 2 slides) — https://slideshare.net/software-engineering-book/ch2-sw-processes
+
 [S7] Studocu - https://www.studocu.com/row/document/the-university-of-faisalabad/human-computer-interaction/2nd-chp-se-none/19031193
