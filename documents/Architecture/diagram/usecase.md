@@ -14,3 +14,4 @@ This Use Case Diagram outlines the functional boundaries of the system, detailin
 ---
 
 > **Scope Note:** This diagram focuses primarily on **Functional Requirements** (direct interactions and workflows). **Non-Functional Requirements** (security standards, system performance, and compliance) are integrated as visual constraints and annotations, as NFRs do not represent primary user use cases.
+![Alt Text](./usecase.png)
