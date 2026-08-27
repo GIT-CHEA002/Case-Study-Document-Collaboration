@@ -1,123 +1,89 @@
-# MHC-PMS System Architecture
+# MHC-PMS Architecture and Scope Constraints
 
-## 1. Overview
+## 1. Architecture Overview
 
-The Mental Health Care Patient Management System (MHC-PMS) uses a distributed client-server architecture that combines centralized data management with standalone local systems.
+The Mental Health Care Patient Management System (MHC-PMS) uses a **centralized database architecture** while also supporting operation on individual laptops. This design allows the system to be used in different healthcare locations, including sites where there is no secure or reliable network connection.
 
-The main components are:
+When a network connection is available, the local system communicates with the central database. This allows patient information to be accessed and updated through the centralized system.
 
-- Local Systems
-- Central Server
-- Central Database
-- Network / Synchronization Service
+When the system is disconnected from the network, it can continue to operate using local copies of patient records that have previously been downloaded. This allows healthcare staff to continue accessing necessary patient information even when network connectivity is unavailable.
 
-This architecture is designed to support mental health care organizations that may operate across multiple clinics and community facilities.
+The architecture therefore combines centralized data management with local/standalone operation.
 
-## 2. Architecture Components
+## 2. Main Architecture Components
 
-### 2.1 Local Systems
+### Local System
 
-Local systems are computers or applications used by staff at individual clinics.
+The local system runs on a laptop or computer at a healthcare site. It allows authorized healthcare staff to access and work with patient information.
 
-They allow authorized users to:
+When the network is unavailable, the local system can use locally stored copies of patient records.
 
-- Register patients
-- Manage appointments
-- View locally available patient information
-- Record approved clinical information
-- Continue essential operations when the network is unavailable
+### Central Database
 
-### 2.2 Central Server
+The central database provides the main storage for MHC-PMS patient information. When the system is connected to the network, local systems communicate with the central database.
 
-The central server acts as the main communication and application layer.
+### Network Connection
 
-It is responsible for:
+The network provides communication between local systems and the centralized database.
 
-- Authentication
-- Authorization
-- Business rules
-- Processing requests
-- Synchronization
-- Communication with the central database
-- Audit logging
+When the connection is available:
 
-### 2.3 Central Database
+Local System → Central Database
 
-The central database stores shared system information such as:
+When the connection is unavailable:
 
-- Patient records
-- Appointments
-- Assessments
-- Treatment plans
-- Progress information
-- Medication records
-- User accounts
-- Audit records
+Local System → Local Copy of Patient Records
 
-### 2.4 Network and Synchronization
+### Synchronization
 
-The network allows local systems to communicate with the central server.
-
-When connectivity is available, local changes can be synchronized with the central system.
-
-When connectivity is unavailable, approved local operations can continue using locally available data.
-
-After the connection is restored, the system synchronizes eligible changes with the central server.
+When connectivity is restored, locally stored information can be exchanged with the central system so that the local and centralized information can be brought up to date.
 
 ## 3. Data Flow
 
-The normal data flow is:
+The basic operation can be represented as:
 
-Local System → Central Server → Central Database
+    Connected Mode
 
-For example, when a clinician searches for a patient:
+    Local System
+          ↓
+       Network
+          ↓
+    Central Database
 
-1. The clinician enters the patient ID.
-2. The local system sends the request to the server.
-3. The server verifies the user's authorization.
-4. The server requests the patient's information from the database.
-5. The database returns the information.
-6. The server sends the result to the local system.
-7. The clinician views the permitted information.
 
-## 4. Network Failure
+    Disconnected Mode
 
-If the network connection is unavailable, the local system should not necessarily stop all operations.
+    Local System
+          ↓
+    Local Patient Records
 
-The system can continue defined essential operations using locally available data.
+The architecture allows the system to continue providing access to patient information even when a secure network connection is not available.
 
-Changes made while offline can be stored locally and queued for synchronization.
+## 4. Scope Constraints
 
-When the network connection is restored:
+MHC-PMS is **not intended to be a complete medical records system**.
 
-Local System → Synchronization → Central Server → Central Database
+The system focuses specifically on the management of information related to mental health care. It does not maintain information about a patient's other medical conditions.
 
-The system should detect synchronization conflicts if multiple locations modify the same information while offline.
+However, MHC-PMS may interact with and exchange data with other clinical information systems when information from those systems is required.
 
-## 5. Advantages
+Therefore, the scope of MHC-PMS can be summarized as:
 
-- Supports multiple clinics
-- Centralizes important information
-- Supports local operation during network failures
-- Allows synchronization between locations
-- Supports centralized reporting
-- Improves availability
-- Provides a foundation for access control and auditing
+- Focuses on mental health care information.
+- Uses a centralized database.
+- Supports operation on local laptops.
+- Can operate using local copies of patient records when disconnected.
+- Can exchange information with other clinical information systems.
+- Does not maintain complete records of all medical conditions.
 
-## 6. Architectural Risks
+## 5. Why This Architecture Is Important
 
-### Network Failure
+The combination of centralized and local operation is important because mental healthcare can be provided at different locations, including sites where secure network connectivity may not always be available.
 
-A network outage can prevent access to information that is not available locally.
+A purely centralized system would depend heavily on continuous network connectivity. If the connection failed, staff could lose access to information stored only on the central system.
 
-### Synchronization Conflict
+By supporting local copies of patient records, MHC-PMS can provide greater availability while still maintaining a centralized source of information when connectivity is available.
 
-Two clinics may modify the same patient record while offline.
+## 6. Reference
 
-### Security Risk
-
-Patient information is highly sensitive and requires strong authentication, authorization, encryption, and auditing.
-
-### Local Data Exposure
-
-Patient information stored on local systems must be protected against unauthorized access or device loss.
+Sommerville, I. (2016). *Software Engineering* (10th ed.). Pearson.
