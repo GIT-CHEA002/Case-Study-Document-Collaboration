@@ -1,6 +1,6 @@
 ### Author: PutKakada Seng
 
-Mentcare System — Requirements Document
+MHC-PMS System — Requirements Document
 
 A Mental Health Clinic Patient Information System Based on the Mentcare case study — Ian Sommerville, Software Engineering, 10th Edition
 
