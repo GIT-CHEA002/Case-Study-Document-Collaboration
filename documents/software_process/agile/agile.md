@@ -32,7 +32,7 @@ The requirement "a user shall be able to search the appointments lists for all c
 | SR-F03 | Daily attendance list — fairly direct from the book, but its exact format/fields are the kind of thing usually tuned with real clinic staff feedback. |
 | SR-NF07 | The 2-hour training / 2-error target is a usability goal — usually achieved by testing the UI with real users and adjusting, not fixed on paper on day one. |
 
-## Reference
+## References
 
 - [S5] SlideShare, "Ch 2 Software Engineering"(Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
 - SlideShare, "Ch2 sw processes" (Sommerville Ch. 2 slides) — https://slideshare.net/software-engineeringbook/ch2-sw-processes
