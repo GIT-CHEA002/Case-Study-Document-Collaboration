@@ -16,7 +16,10 @@ Sommerville lists concrete benefits of incremental development, and two of them 
 
 * Frequent feedback: it is easier to get customer feedback on the development work that has been done — customers can comment on demonstrations of the software and see how much has been implemented. 
 
-* Faster delivery: more rapid delivery and deployment of useful software to the customer is possible, so customers gain value from the software earlier than with a waterfall process. 
+* Faster delivery: more rapid delivery and deployment of useful software to the customer is possible, so customers gain value from the software earlier than with a waterfall process.
+
+## Applied to Section 5.4
+The requirement "a user shall be able to search the appointments lists for all clinics" specifies that search must exist but not how it should behave — by name, by date range, by clinic, by status, etc. Under waterfall, that ambiguity would have to be fully resolved on paper before any code is written, because the waterfall model's main drawback is the difficulty of accommodating change once the process is underway. Under incremental development, a first version of the search feature can be built with a reasonable guess at behavior, shown to clinic staff, and revised — because specification and validation are not locked in sequence but interleaved, each round of user feedback can directly reshape the next increment's specification. 
 
 ## Stage 3 — Incremental / Agile
 
@@ -33,4 +36,5 @@ Sommerville lists concrete benefits of incremental development, and two of them 
 
 - [S5] SlideShare, "Ch 2 Software Engineering"(Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
 - SlideShare, "Ch2 sw processes" (Sommerville Ch. 2 slides) — https://slideshare.net/software-engineeringbook/ch2-sw-processes
-
+- ian sommerville software engineering (tenth edition) pearson education limited 2016 | PDF - https://www.slideshare.net/slideshow/ian-sommerville-software-engineering-tenth-edition-pearson-education-limited-2016/287925972
+- CS 410/510 - Software Engineering class notes - https://cs.ccsu.edu/~stan/classes/CS410/Notes16/02-SoftwareProcesses.html
