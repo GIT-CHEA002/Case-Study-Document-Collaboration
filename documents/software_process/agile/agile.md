@@ -12,11 +12,11 @@ A companion source paraphrasing the same chapter adds the detail that matters mo
 
 Sommerville lists concrete benefits of incremental development, and two of them are exactly what resolving "search" behavior in 5.4 requires:
 
-Lower cost of changes: the cost of accommodating changing customer requirements is reduced, and the amount of analysis and documentation that has to be redone is much less than with the waterfall model. 
+* Lower cost of changes: the cost of accommodating changing customer requirements is reduced, and the amount of analysis and documentation that has to be redone is much less than with the waterfall model. 
 
-Frequent feedback: it is easier to get customer feedback on the development work that has been done — customers can comment on demonstrations of the software and see how much has been implemented. 
+* Frequent feedback: it is easier to get customer feedback on the development work that has been done — customers can comment on demonstrations of the software and see how much has been implemented. 
 
-Faster delivery: more rapid delivery and deployment of useful software to the customer is possible, so customers gain value from the software earlier than with a waterfall process. 
+* Faster delivery: more rapid delivery and deployment of useful software to the customer is possible, so customers gain value from the software earlier than with a waterfall process. 
 
 ## Stage 3 — Incremental / Agile
 
@@ -32,6 +32,5 @@ Faster delivery: more rapid delivery and deployment of useful software to the cu
 ## Reference
 
 - [S5] SlideShare, "Ch 2 Software Engineering"(Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
-- Scribd, "SoftwareProcesses" (CNG350, based on Sommerville Ch. 2) — https://www.scribd.com/presentation/449486496/SoftwareProcesses
-- SlideShare, "Software Process Models in Software Engineering" (Sommerville, 6th ed. slides) — https://www.slideshare.net/slideshow/software-process-models-in-software-engineering-8974/272700812
-- SlideShare, "Lecture 16 — Software Process (Software Engineering and Development)" — https://www.slideshare.net/slideshow/lecture-16-software-process-software-engineering-and-development-pptx/279937215
+- SlideShare, "Ch2 sw processes" (Sommerville Ch. 2 slides) — https://slideshare.net/software-engineeringbook/ch2-sw-processes
+
