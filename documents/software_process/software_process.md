@@ -16,3 +16,9 @@ Used for infrastructure — encryption, authentication hardware, server infrastr
 ### Stage 3 — Incremental / Agile
 
 Used to refine ambiguous, user-facing behavior — such as resolving what "search" should actually mean — through building a version, testing it with real users, and refining it, which the book describes as the core idea of incremental development: "specification, development and validation are interleaved." [S5]
+
+### References
+
+-[S5] SlideShare, "Ch 2 Software Engineering" (Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
+
+-[S6] SlideShare, "Ch2 sw processes" (Sommerville Ch. 2 slides) — https://slideshare.net/software-engineering-book/ch2-sw-processes
