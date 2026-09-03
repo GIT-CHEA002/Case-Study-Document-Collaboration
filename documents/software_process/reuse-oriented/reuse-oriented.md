@@ -26,6 +26,9 @@ Mentcare's infrastructure requirements — encryption, authentication hardware, 
 | SR-NF03 | TLS 1.3 (in transit) and AES-256 (at rest) encryption | Existing, industry-standard cryptographic libraries, already validated through widespread use |
 | SR-NF08 | Linux-based data centre infrastructure | Existing operating system and hosting infrastructure, not built by the Mentcare team |
 
+## Reuse-Oriented — How it works :
+Integrate an existing smart card authentication module and configure it against staff employee IDs (SR-NF02). Integrate existing TLS 1.3 and AES-256 encryption libraries into the data pipeline (SR-NF03). Configure a standard server cluster with load balancing and heartbeat-based failover (SR-NF01) on the health authority's existing Linux data centre (SR-NF08). Integrate existing database replication/offline-sync technology for clinics without reliable connectivity (SR-F07). Each component is validated through integration testing — confirming the reused component works correctly with Mentcare's core system — rather than unit testing new logic, since the logic itself already exists and is proven.
+
 ### Reference
 
 - [S5] SlideShare, "Ch 2 Software Engineering" (Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
