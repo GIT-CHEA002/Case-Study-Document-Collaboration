@@ -27,6 +27,9 @@ The tradeoff itself (Section 9: privacy vs. availability) is a design conflict t
 | SR-NF05 | Patient privacy standard compliance (HStan-03-2006-priv) | External law — non-negotiable, exists independently of the project |
 | SR-NF06 | Hospital managers barred from individual patient data | Privacy law, fixed before any design decision was made |
 
+## Plan-Driven — How it works:
+Requirements analysis and definition: identify the two governing laws (data protection, mental health law) and lock down the safety-critical behaviors (dosage checking, danger warnings) before any code is written. System and software design: specify SR-F04–F08 and SR-NF04–NF06 fully, including the privacy-vs-availability tradeoff (Section 9), resolved analytically at this stage. Implementation and testing: build strictly to that frozen specification. Verification: test specifically against legal and safety compliance before anything goes live, since a failure here has legal consequences, not just a bad user experience.
+
 ### Reference
 
 -[S0] Sommerville, I. (2016) Software Engineering, 10th Edition, Pearson Education Limited, Bosto
