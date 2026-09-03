@@ -1,7 +1,7 @@
 ### Author PutKakada Seng
 ### Development Process Model
 
-Important distinction: the book does not state which process model was used to build Mentcare specifically — Mentcare is a requirements case study, not a project-management case study. What follows is the general process-model theory from Sommerville's Chapter 2, applied by reasoning to Mentcare's own characteristics (safety-critical, legally regulated, multi-clinic).
+Important distinction: the book does not state which process model was used to build Mental health care specifically — Mental health care is a requirements case study, not a project-management case study. What follows is the general process-model theory from Sommerville's Chapter 2, applied by reasoning to Mental health care's own characteristics (safety-critical, legally regulated, multi-clinic).
 
 The book states as a general principle: "In practice, most large systems are developed using a process that incorporates elements from all of these [process] models." [S5] It also notes: "The waterfall model is mostly used for large systems engineering projects where a system is developed at several sites. In those circumstances, the plan-driven nature of the waterfall model helps coordinate the work." [S6]
 

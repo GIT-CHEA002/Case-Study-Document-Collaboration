@@ -1,6 +1,6 @@
-# How Does Agile Relate to Mentcare?
+# How Does Agile Relate to Mental health care?
 
-Mentcare serves many different user groups: doctors, nurses, administrative staff, record managers, and system administrators. Each group has different working methods and needs. Therefore, it is difficult to write a complete set of requirements from the start and keep them unchanged until the system is complete.
+Mental health care serves many different user groups: doctors, nurses, administrative staff, record managers, and system administrators. Each group has different working methods and needs. Therefore, it is difficult to write a complete set of requirements from the start and keep them unchanged until the system is complete.
 
 For example, the initial requirement might simply say:
 
@@ -28,7 +28,7 @@ The key point is that requirements are not just written on paper but are validat
 
 ---
 
-# Where Is Agile Used in Mentcare?
+# Where Is Agile Used in Mental health care?
 
 Agile is particularly suitable for areas where the best implementation method cannot be fully determined from the outset.
 
@@ -101,7 +101,7 @@ Instead of trying to predict every reporting requirement from the beginning, Agi
 
 # Key Idea
 
-Agile is valuable in Mentcare because it supports continuous refinement of requirements through real user feedback.
+Agile is valuable in Mental health care because it supports continuous refinement of requirements through real user feedback.
 
 The relationship can be summarized as:
 
@@ -116,9 +116,9 @@ Doctor / Nurse Feedback
     ↓
 Requirement Refinement
     ↓
-Improved Mentcare Function
+Improved Mental health care Function
 ```
 
 In simple terms:
 
-> **Agile helps Mentcare evolve according to real clinical needs instead of assumptions made only by developers.**
+> **Agile helps Mental health care evolve according to real clinical needs instead of assumptions made only by developers.**

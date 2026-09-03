@@ -1,6 +1,6 @@
-# What Does Agile Contribute to Mentcare in Real Life?
+# What Does Agile Contribute to Mental health care in Real Life?
 
-Agile contributes to Mentcare in several important ways. Its main value is not only faster software development, but also making the system more practical, safer, and more suitable for real healthcare environments.
+Agile contributes to Mental health care in several important ways. Its main value is not only faster software development, but also making the system more practical, safer, and more suitable for real healthcare environments.
 
 ---
 
@@ -156,7 +156,7 @@ Agile helps connect these two areas of expertise.
 
 # Real-Life Contribution Summary
 
-Agile contributes to Mentcare by improving both the development process and the final healthcare system.
+Agile contributes to Mental health care by improving both the development process and the final healthcare system.
 
 Its major contributions include:
 
@@ -185,7 +185,7 @@ Safer and More Effective Patient Care
 
 # Key Conclusion
 
-The most important real-life contribution of Agile to Mentcare is that it keeps the software closely connected to actual clinical needs.
+The most important real-life contribution of Agile to Mental health care is that it keeps the software closely connected to actual clinical needs.
 
 Instead of developers making all decisions based only on assumptions, doctors and nurses continuously evaluate the system and help refine it.
 
@@ -195,4 +195,4 @@ A useful summary is:
 
 Or more simply:
 
-> **Agile helps Mentcare become more usable, adaptable, cost-effective, and supportive of safer patient care.**
+> **Agile helps Mental health care become more usable, adaptable, cost-effective, and supportive of safer patient care.**

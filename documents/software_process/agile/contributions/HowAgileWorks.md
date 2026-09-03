@@ -1,4 +1,4 @@
-# How Does Agile Work in Mentcare?
+# How Does Agile Work in Mental health care?
 
 Let us take the **Risk Warning** function as an example.
 
@@ -46,7 +46,7 @@ Requirement Refinement
 Next Sprint
 ```
 
-This is a practical example of **Agile applied to Mentcare**.
+This is a practical example of **Agile applied to Mental health care**.
 
 ---
 
@@ -54,7 +54,7 @@ This is a practical example of **Agile applied to Mentcare**.
 
 Another important advantage of Agile is **prioritization**.
 
-Mentcare contains many functions, but not every function has the same clinical importance or safety impact.
+Mental health care contains many functions, but not every function has the same clinical importance or safety impact.
 
 The development team can therefore prioritize features based on value and risk.
 
@@ -109,7 +109,7 @@ This is one of the most important contributions of Agile to **Requirements Engin
 
 ---
 
-# Agile Cannot Be Applied Uniformly to All Parts of Mentcare
+# Agile Cannot Be Applied Uniformly to All Parts of Mental health care
 
 Agile is highly suitable for areas related to:
 
@@ -121,7 +121,7 @@ Agile is highly suitable for areas related to:
 - Search Functions
 - User Interaction
 
-However, some Mentcare requirements cannot be changed freely from Sprint to Sprint.
+However, some Mental health care requirements cannot be changed freely from Sprint to Sprint.
 
 Examples include:
 
@@ -146,7 +146,7 @@ If **Patient Records** already exist, access control and privacy protection must
 
 # A More Practical Approach
 
-A better approach for Mentcare is:
+A better approach for Mental health care is:
 
 > **Agile Development + Strong Safety/Security Engineering**
 
@@ -187,14 +187,14 @@ Adaptability + Feedback
           ↓
 Safety + Security + Compliance
           =
-      MENTCARE
+      Mental health care
 ```
 
 ---
 
 # Key Conclusion
 
-Agile is valuable in Mentcare because it allows user-facing requirements to evolve through real clinical feedback.
+Agile is valuable in Mental health care because it allows user-facing requirements to evolve through real clinical feedback.
 
 However, Agile cannot replace the strict engineering practices required for safety, privacy, security, and legal compliance.
 
@@ -204,4 +204,4 @@ A useful summary is:
 
 Or more simply:
 
-> **Mentcare should be adaptable, but never uncontrolled.**
+> **Mental health care should be adaptable, but never uncontrolled.**

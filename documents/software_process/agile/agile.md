@@ -8,7 +8,7 @@ Incremental development itself may be either plan-driven or agile — but agile 
 
 ## Why agile fits this kind of requirement ?
 
-Sommerville lists concrete benefits of incremental/agile development, and each one applies directly to Mentcare's user-facing behavior: [S5]
+Sommerville lists concrete benefits of incremental/agile development, and each one applies directly to Mental health care's user-facing behavior: [S5]
 
 Lower cost of changes: the cost of accommodating changing customer requirements is reduced, and the amount of analysis and documentation that has to be redone is much less than with the waterfall model — relevant because exactly what "search" should mean, or how a report should be formatted, wasn't fully knowable up front the way a legal rule is.
 
