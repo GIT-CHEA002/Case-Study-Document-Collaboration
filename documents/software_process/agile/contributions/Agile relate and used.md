@@ -44,7 +44,7 @@ But reality raises many questions:
 - What if there are two patients with the same name?
 - Is a date of birth required?
 - Should a photo or the current clinic be displayed?
-- Which users are allowed to search the entire database?
+- Which users are allowed to search the entire database? 
 
 The development team can build a simple version first, allow doctors and clinic staff to use it, and then adjust it based on feedback.
 
