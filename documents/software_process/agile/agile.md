@@ -1,40 +1,33 @@
 ### Author by Sedtha
 
-## What "Agile" mean?
+## What "agile" means ?
 
-Sommerville defines three basic process models — waterfall, incremental development, and integration/configuration (reuse-oriented). Incremental development is described as follows: specification, development and validation are interleaved, and it may be plan-driven or agile. This is explicitly contrasted with waterfall, where specification and development are separate and distinct phases. 
+Agile (incremental) development is a process where specification, development, and validation are interleaved rather than kept as separate, sequential phases — the system is developed as a series of versions (increments), with each version adding functionality to the previous version, and customer feedback shapes each next increment. Sommerville explicitly contrasts this with the waterfall model, where specification and development are kept as separate, distinct phases done once, in order. [S5]
 
-The interleaving point is repeated more precisely in the "process activities" section: the four basic process activities of specification, development, validation and evolution are organized differently in different development processes — in the waterfall model they are organized in sequence, whereas in incremental development they are interleaved.
+Incremental development itself may be either plan-driven or agile — but agile specifically means planning is done incrementally, and it is easier to change the process to reflect changing customer requirements, rather than committing to a full plan up front the way plan-driven development does. [S7]
 
-A companion source paraphrasing the same chapter adds the detail that matters most for your case: the system is developed as a series of versions (increments), with each version adding functionality to the previous version. 
+## Why agile fits this kind of requirement ?
 
-## Why the source says this model helps with ambiguity
+Sommerville lists concrete benefits of incremental/agile development, and each one applies directly to Mentcare's user-facing behavior: [S5]
 
-Sommerville lists concrete benefits of incremental development, and two of them are exactly what resolving "search" behavior in UR-F02 requires:
+Lower cost of changes: the cost of accommodating changing customer requirements is reduced, and the amount of analysis and documentation that has to be redone is much less than with the waterfall model — relevant because exactly what "search" should mean, or how a report should be formatted, wasn't fully knowable up front the way a legal rule is.
 
-* Lower cost of changes: the cost of accommodating changing customer requirements is reduced, and the amount of analysis and documentation that has to be redone is much less than with the waterfall model. 
+Frequent feedback: it is easier to get customer feedback on the development work that has been done — customers can comment on demonstrations of the software and see how much has been implemented — relevant because clinic staff are the real judge of whether a search feature or report layout is actually usable.
 
-* Frequent feedback: it is easier to get customer feedback on the development work that has been done — customers can comment on demonstrations of the software and see how much has been implemented. 
+Faster delivery: more rapid delivery and deployment of useful software to the customer is possible, so customers gain value from the software earlier than with a waterfall process — relevant because a working, if imperfect, search or reporting feature can go live and improve with real clinic use, rather than waiting for a single, fully-specified version.
 
-* Faster delivery: more rapid delivery and deployment of useful software to the customer is possible, so customers gain value from the software earlier than with a waterfall process.
+Unlike the plan-driven items (fixed by external law) or the reuse-oriented items (solved by existing technology), these requirements involve genuine ambiguity in what the *right* behavior is — the kind of ambiguity that can only be resolved by building something, watching real staff use it, and adjusting.
 
-## Applied to UR-F02
-The requirement "a user shall be able to search the appointments lists for all clinics" specifies that search must exist but not how it should behave — by name, by date range, by clinic, by status, etc. Under waterfall, that ambiguity would have to be fully resolved on paper before any code is written, because the waterfall model's main drawback is the difficulty of accommodating change once the process is underway. Under incremental development, a first version of the search feature can be built with a reasonable guess at behavior, shown to clinic staff, and revised — because specification and validation are not locked in sequence but interleaved, each round of user feedback can directly reshape the next increment's specification. 
+## Which of our SRS requirements were built this way?
 
-## Stage 3 — Incremental / Agile
+| ID | Requirement | Why Agile |
+|---|---|---|
+| SR-F01 | Monthly Drug Cost Report, generated at 17:30 on the last working day | The exact timing is an implementation decision beyond what the URD stated — the kind of detail typically settled by testing with real clinic managers |
+| SR-F02 | Cross-clinic appointment search | The book's own ambiguity example — "search" had to be clarified through iteration, the clearest possible proof of agile refinement |
+| SR-F03 | Daily attendance list per clinic | Direct from the book in principle, but its exact format/fields are the kind of detail usually tuned with real clinic staff feedback |
+| SR-NF07 | 2-hour training target, 2 errors/hour usability goal | A usability target normally achieved by testing the UI with real users and adjusting, not fixed correctly on the first attempt |
 
-*Behavior that needed real usage/feedback to pin down — this is where refinement happens.*
+### Reference
 
-| ID | Why agile |
-|---|---|
-| SR-F01 | The exact timing (17:30, last working day) is an implementation decision beyond what the URD stated — the kind of detail typically settled by testing with actual clinic managers. |
-| SR-F02 | The textbook ambiguity example itself — "search" had to be resolved through clarification, the clearest possible proof of iterative refinement. |
-| SR-F03 | Daily attendance list — fairly direct from the book, but its exact format/fields are the kind of thing usually tuned with real clinic staff feedback. |
-| SR-NF07 | The 2-hour training / 2-error target is a usability goal — usually achieved by testing the UI with real users and adjusting, not fixed on paper on day one. |
-
-## References
-
-- [S5] SlideShare, "Ch 2 Software Engineering"(Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
-- SlideShare, "Ch2 sw processes" (Sommerville Ch. 2 slides) — https://slideshare.net/software-engineeringbook/ch2-sw-processes
-- ian sommerville software engineering (tenth edition) pearson education limited 2016 | PDF - https://www.slideshare.net/slideshow/ian-sommerville-software-engineering-tenth-edition-pearson-education-limited-2016/287925972
-- CS 410/510 - Software Engineering class notes - https://cs.ccsu.edu/~stan/classes/CS410/Notes16/02-SoftwareProcesses.html
+- [S5] SlideShare, "Ch 2 Software Engineering" (Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
+- [S7] Studocu — https://www.studocu.com/row/document/the-university-of-faisalabad/human-computer-interaction/2nd-chp-se-none/19031193
