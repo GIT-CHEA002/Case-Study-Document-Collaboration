@@ -27,6 +27,10 @@ Unlike the plan-driven items (fixed by external law) or the reuse-oriented items
 | SR-F03 | Daily attendance list per clinic | Direct from the book in principle, but its exact format/fields are the kind of detail usually tuned with real clinic staff feedback |
 | SR-NF07 | 2-hour training target, 2 errors/hour usability goal | A usability target normally achieved by testing the UI with real users and adjusting, not fixed correctly on the first attempt |
 
+## Agile — How it works:
+Sprint 1: build a basic single-clinic search, demo it to clinic staff, learn the requirement actually meant cross-clinic search, refine to the "all clinics simultaneously" behavior (SR-F02). Sprint 2: build the daily attendance list, test the format with receptionists, adjust fields based on what's actually useful day-to-day (SR-F03). Sprint 3: build monthly report generation, test with clinic managers, converge on the 17:30/last-working-day timing (SR-F01). Sprint 4: pilot the interface with new staff, measure actual training time and error rate against the 2-hour/2-errors target, and refine the UI until it's met (SR-NF07).
+
+
 ### Reference
 
 - [S5] SlideShare, "Ch 2 Software Engineering" (Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
