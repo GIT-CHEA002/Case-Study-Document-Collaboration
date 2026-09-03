@@ -1,66 +1,31 @@
-# Reuse-Oriented / Component-Based Approach
+### Author by Sao Sothea
 
-## Overview
+## What "reuse-oriented" means ?
 
-The MHC-PMS can use a reuse-oriented / component-based approach for infrastructure and supporting services. Instead of developing every technical component from scratch, the system can be assembled using existing, proven technologies and reusable components.
+A reuse-oriented process is one where the system is developed by assembling and integrating components that already exist — off-the-shelf systems, software services, or program libraries — rather than writing every part from scratch, which is what makes it fundamentally different from both waterfall and agile. Sommerville names this as one of the three basic process models, alongside the waterfall (plan-driven) model and incremental development. [S5]
 
-This approach is especially appropriate for security, authentication, encryption, database, synchronization, and server infrastructure because these areas require high reliability and careful engineering.
+This model is a systematic reuse approach where systems are integrated from existing components or COTS (commercial off-the-shelf) systems. Unlike plan-driven development, where the team designs and builds every requirement into new code following a fixed specification, reuse-oriented development treats a large part of the requirement as already solved — the engineering task shifts from *building* to *configuring and integrating*.
 
-## Why We Use Reuse-Oriented Development
+## Why the book says reuse-oriented fits this kind of requirement ?
 
-MHC-PMS manages sensitive mental health patient information. Therefore, security, reliability, and availability are critical requirements.
+Sommerville's own case for reuse-oriented development rests on two practical points that carry extra weight for infrastructure like Mentcare's: [S5]
 
-Developing security and infrastructure components from scratch would increase development time and introduce unnecessary technical risks. Reusing established and well-tested components allows the development team to focus its effort on the parts of MHC-PMS that are specific to mental health care.
+Reduced development risk, since integrating an already-proven, widely used component avoids the risk of subtle bugs that come with writing brand-new, unvalidated code — and this matters more, not less, for security-critical infrastructure, where an in-house-built encryption or authentication system would need extensive independent validation before anyone could trust it with patient data.
 
-The main benefits are:
+More effective use of development resources, since the team's time goes toward configuration and integration testing rather than reinventing solved engineering problems, freeing effort for the parts of Mentcare that actually are unique to a mental health clinic (like the clinical record-keeping and safety-flag logic covered under plan-driven).
 
-- Reduced development time because existing components do not need to be built from zero.
-- Reduced technical risk because mature technologies have already been widely tested and used.
-- Improved security by using established security technologies instead of creating custom cryptographic or authentication mechanisms.
-- Improved reliability by using proven infrastructure and synchronization technologies.
-- Easier maintenance because standard technologies can be updated and maintained independently.
+Mentcare's infrastructure requirements — encryption, authentication hardware, server clustering, offline sync — are not unique to Mentcare or to healthcare; they're general-purpose engineering problems that the wider software industry has already solved and hardened through years of real-world use, which is exactly the condition under which the book favors reuse over custom-building.
 
-## Examples of Reusable Components
+## Which of our SRS requirements were built this way?
 
-| Area | Reusable Technology / Component | Reason for Reuse |
+| ID | Requirement | Why Reuse-Oriented |
 |---|---|---|
-| Offline access and synchronization | Existing replication and synchronization technology | Avoids developing a synchronization mechanism from scratch. |
-| High availability | Failover clustering / existing high-availability infrastructure | Provides a proven approach for reducing service downtime. |
-| Authentication | Smart-card authentication hardware and protocols | Uses established authentication mechanisms. |
-| Encryption | Established cryptographic libraries and standards | Avoids implementing cryptography ourselves. |
-| Server infrastructure | Linux and established server infrastructure | Mature and widely used operating-system and server technologies. |
+| SR-F07 | Offline/local sync of patient records at low-connectivity sites | Built on existing database replication/sync technology, not a custom-built sync protocol |
+| SR-NF01 | 99.99% uptime with 5-second automatic failover | Standard high-availability clustering pattern (load balancer + standby node + heartbeat check) |
+| SR-NF02 | Smart card authentication, 8-digit employee ID extraction | Off-the-shelf smart card hardware and authentication protocol |
+| SR-NF03 | TLS 1.3 (in transit) and AES-256 (at rest) encryption | Existing, industry-standard cryptographic libraries, already validated through widespread use |
+| SR-NF08 | Linux-based data centre infrastructure | Existing operating system and hosting infrastructure, not built by the Mentcare team |
 
-> Note: Specific technologies such as TLS 1.3, AES-256, or particular authentication hardware should be treated as proposed implementation choices unless they are explicitly required by the project's source material.
+### Reference
 
-## What Should Be Custom-Built?
-
-Reuse-oriented development does not mean that the entire MHC-PMS should be made from existing components.
-
-The application-specific parts of the system may require custom development, including:
-
-- Patient management
-- Mental health care workflows
-- Patient assessment
-- Treatment-plan management
-- Patient monitoring
-- Clinic-specific reporting
-- Integration rules specific to MHC-PMS
-
-Therefore, the system can combine both approaches:
-
-```text
-MHC-PMS
-│
-├── Custom Development
-│   ├── Patient Management
-│   ├── Mental Health Workflows
-│   ├── Assessment
-│   ├── Treatment Plans
-│   └── Monitoring
-│
-└── Reused Components
-    ├── Authentication
-    ├── Encryption
-    ├── Database Technology
-    ├── Synchronization
-    └── Server Infrastructure
+- [S5] SlideShare, "Ch 2 Software Engineering" (Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
