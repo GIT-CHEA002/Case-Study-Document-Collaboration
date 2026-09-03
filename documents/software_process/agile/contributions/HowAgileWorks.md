@@ -67,7 +67,7 @@ The development team can therefore prioritize features based on value and risk.
 - Risk Status
 
 ## Medium Priority
-
+ 
 - Missed Appointment Monitoring
 - Reports
 
