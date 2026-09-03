@@ -41,7 +41,7 @@ Two system purposes:
 | UR-F06 | The system uses a centralized database but is also designed to run on a laptop so it can be accessed from sites without secure network connectivity. When connected, it uses the central database; when disconnected, it downloads and uses local copies of patient records. It is not a complete medical records system — it does not maintain information about other medical conditions — but it may interact and exchange data with other clinical information systems. [S0] |
 | UR-F07 | "The safety implications stem from the fact that some mental illnesses cause patients to become suicidal or a danger to other people. Wherever possible, the system should warn medical staff about potentially suicidal or dangerous patients. " [S4] |
 
-The word "search" in requirement 1 is deliberately ambiguous: the user's intended meaning was to search across all clinics, while a developer might interpret it as searching within one individual clinic first. This is used in the book to illustrate why user requirements need refining into precise system requirements. [S2]
+The word "search" in requirement is deliberately ambiguous: the user's intended meaning was to search across all clinics, while a developer might interpret it as searching within one individual clinic first. This is used in the book to illustrate why user requirements need refining into precise system requirements. [S2]
 
 ## 4. Non-Functional Requirements
 
