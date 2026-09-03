@@ -6,7 +6,7 @@ A reuse-oriented process is one where the system is developed by assembling and 
 
 This model is a systematic reuse approach where systems are integrated from existing components or COTS (commercial off-the-shelf) systems. Unlike plan-driven development, where the team designs and builds every requirement into new code following a fixed specification, reuse-oriented development treats a large part of the requirement as already solved — the engineering task shifts from *building* to *configuring and integrating*.
 
-## Why the book says reuse-oriented fits this kind of requirement ?
+## Why reuse-oriented fits this kind of requirement ?
 
 Sommerville's own case for reuse-oriented development rests on two practical points that carry extra weight for infrastructure like Mentcare's: [S5]
 
