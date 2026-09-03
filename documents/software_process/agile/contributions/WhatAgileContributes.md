@@ -16,7 +16,7 @@ Clinician feedback can help the development team:
 - Prioritize important information
 - Improve screen layout
 - Simplify navigation
-- Make critical information easier to find
+- Make critical information easier to find 
 - Improve the overall clinical workflow
 
 The key idea is:
