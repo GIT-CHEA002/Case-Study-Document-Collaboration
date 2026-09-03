@@ -1,4 +1,4 @@
-  # SRS Documentation By Sokchea
+  ### Author  : Khat Panha
   # 4. System Requirements Specification (SRS)
 
     Each SRS item expands a URD item into a precise, unambiguous, verifiable statement — removing any interpretation gap (e.g. URD 3.1-1's "search" is ambiguous about scope; SR-F02 below resolves it explicitly).

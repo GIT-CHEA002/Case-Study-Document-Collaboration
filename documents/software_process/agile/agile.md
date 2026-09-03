@@ -1,37 +1,37 @@
 ### Author by Sedtha
 
-## What the model actually is (per Sommerville Ch. 2):
+## What "agile" means ?
 
-The chapter defines three basic generic process models — waterfall, incremental development, and reuse/integration-and-configuration. Incremental development is distinguished from waterfall specifically by when the core activities happen: in the waterfall model these activities are organized in sequence, whereas in incremental development specification, development, and validation are interleaved, and the model may be either plan-driven or agile. This same point is repeated across multiple course renderings of the chapter: real software processes are interleaved sequences of technical, collaborative, and managerial activities, and the four basic activities — specification, development, validation, and evolution — are organized differently depending on the process, with waterfall sequencing them and incremental development interleaving them.
+Agile (incremental) development is a process where specification, development, and validation are interleaved rather than kept as separate, sequential phases — the system is developed as a series of versions (increments), with each version adding functionality to the previous version, and customer feedback shapes each next increment. Sommerville explicitly contrasts this with the waterfall model, where specification and development are kept as separate, distinct phases done once, in order. [S5]
 
-## Mechanically, how the increments work:
+Incremental development itself may be either plan-driven or agile — but agile specifically means planning is done incrementally, and it is easier to change the process to reflect changing customer requirements, rather than committing to a full plan up front the way plan-driven development does. [S7]
 
-Older Sommerville slide decks (6th edition, same underlying model) describe the operational logic: rather than deliver the system as a single delivery, development and delivery are broken down into increments, with each increment delivering part of the required functionality. Crucially, user requirements are prioritized, and the highest-priority requirements are included in the early increments, and once development of an increment has started, the requirements for that increment are frozen, though requirements for later increments can continue to evolve.
+## Why agile fits this kind of requirement ?
 
-This is the mechanism that matters for your Mentcare argument: incremental/agile doesn't require the full specification to be correct before building starts. It only requires the current increment's scope to be frozen, while later increments stay open to revision based on what's learned from earlier ones.
+Sommerville lists concrete benefits of incremental/agile development, and each one applies directly to Mentcare's user-facing behavior: [S5]
 
-## Why this fits the "search" ambiguity case (applying the theory by reasoning, not from the book):
+Lower cost of changes: the cost of accommodating changing customer requirements is reduced, and the amount of analysis and documentation that has to be redone is much less than with the waterfall model — relevant because exactly what "search" should mean, or how a report should be formatted, wasn't fully knowable up front the way a legal rule is.
 
-The book's own justification for why waterfall struggles with certain requirements is the same logic your document is applying: waterfall assumes specification can be finished before development starts, whereas incremental development assumes specification and validation happen together, in a loop, resolved through built increments rather than upfront analysis. Where a requirement like "what should search return" is inherently a matter of end-user judgment rather than a fixed, derivable rule, the plan-driven waterfall approach has no natural mechanism for testing that judgment against real usage before code exists — it can only be resolved by writing it down and hoping it's right. Incremental development's interleaving of specification and validation gives you a build-test-refine loop instead, which is the general property Sommerville attributes to this model.
+Frequent feedback: it is easier to get customer feedback on the development work that has been done — customers can comment on demonstrations of the software and see how much has been implemented — relevant because clinic staff are the real judge of whether a search feature or report layout is actually usable.
 
-## The broader framing point your document made is also textbook-accurate:
+Faster delivery: more rapid delivery and deployment of useful software to the customer is possible, so customers gain value from the software earlier than with a waterfall process — relevant because a working, if imperfect, search or reporting feature can go live and improve with real clinic use, rather than waiting for a single, fully-specified version.
 
-The chapter's summary line — that in practice, most large systems are developed using a process that incorporates elements from all of these models — is exactly the caveat your Stage 3 write-up already leans on: Mentcare as a whole is not "pure" incremental/agile, it's a hybrid, and the incremental/agile element is invoked specifically for the ambiguous, user-facing part (search behavior), not the entire system.
+Unlike the plan-driven items (fixed by external law) or the reuse-oriented items (solved by existing technology), these requirements involve genuine ambiguity in what the *right* behavior is — the kind of ambiguity that can only be resolved by building something, watching real staff use it, and adjusting.
 
-## Stage 3 — Incremental / Agile
+## Which of our SRS requirements were built this way?
 
-*Behavior that needed real usage/feedback to pin down — this is where refinement happens.*
+| ID | Requirement | Why Agile |
+|---|---|---|
+| SR-F01 | Monthly Drug Cost Report, generated at 17:30 on the last working day | The exact timing is an implementation decision beyond what the URD stated — the kind of detail typically settled by testing with real clinic managers |
+| SR-F02 | Cross-clinic appointment search | The book's own ambiguity example — "search" had to be clarified through iteration, the clearest possible proof of agile refinement |
+| SR-F03 | Daily attendance list per clinic | Direct from the book in principle, but its exact format/fields are the kind of detail usually tuned with real clinic staff feedback |
+| SR-NF07 | 2-hour training target, 2 errors/hour usability goal | A usability target normally achieved by testing the UI with real users and adjusting, not fixed correctly on the first attempt |
 
-| ID | Why agile |
-|---|---|
-| SR-F01 | The exact timing (17:30, last working day) is an implementation decision beyond what the URD stated — the kind of detail typically settled by testing with actual clinic managers. |
-| SR-F02 | The textbook ambiguity example itself — "search" had to be resolved through clarification, the clearest possible proof of iterative refinement. |
-| SR-F03 | Daily attendance list — fairly direct from the book, but its exact format/fields are the kind of thing usually tuned with real clinic staff feedback. |
-| SR-NF07 | The 2-hour training / 2-error target is a usability goal — usually achieved by testing the UI with real users and adjusting, not fixed on paper on day one. |
+## Agile — How it works:
+Sprint 1: build a basic single-clinic search, demo it to clinic staff, learn the requirement actually meant cross-clinic search, refine to the "all clinics simultaneously" behavior (SR-F02). Sprint 2: build the daily attendance list, test the format with receptionists, adjust fields based on what's actually useful day-to-day (SR-F03). Sprint 3: build monthly report generation, test with clinic managers, converge on the 17:30/last-working-day timing (SR-F01). Sprint 4: pilot the interface with new staff, measure actual training time and error rate against the 2-hour/2-errors target, and refine the UI until it's met (SR-NF07).
 
-## Reference
 
-- [S5] SlideShare, "Ch 2 Software Engineering"(Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
-- Scribd, "SoftwareProcesses" (CNG350, based on Sommerville Ch. 2) — https://www.scribd.com/presentation/449486496/SoftwareProcesses
-- SlideShare, "Software Process Models in Software Engineering" (Sommerville, 6th ed. slides) — https://www.slideshare.net/slideshow/software-process-models-in-software-engineering-8974/272700812
-- SlideShare, "Lecture 16 — Software Process (Software Engineering and Development)" — https://www.slideshare.net/slideshow/lecture-16-software-process-software-engineering-and-development-pptx/279937215
+### Reference
+
+- [S5] SlideShare, "Ch 2 Software Engineering" (Sommerville Ch. 2 slides) — https://www.slideshare.net/slideshow/ch-2-software-engineering/91393431
+- [S7] Studocu — https://www.studocu.com/row/document/the-university-of-faisalabad/human-computer-interaction/2nd-chp-se-none/19031193
