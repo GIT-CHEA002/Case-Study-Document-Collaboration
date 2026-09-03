@@ -1,6 +1,6 @@
 ### Author by Sedtha
 
-## What the model is, per the source
+## What "Agile" mean?
 
 Sommerville defines three basic process models — waterfall, incremental development, and integration/configuration (reuse-oriented). Incremental development is described as follows: specification, development and validation are interleaved, and it may be plan-driven or agile. This is explicitly contrasted with waterfall, where specification and development are separate and distinct phases. 
 
@@ -10,7 +10,7 @@ A companion source paraphrasing the same chapter adds the detail that matters mo
 
 ## Why the source says this model helps with ambiguity
 
-Sommerville lists concrete benefits of incremental development, and two of them are exactly what resolving "search" behavior in 5.4 requires:
+Sommerville lists concrete benefits of incremental development, and two of them are exactly what resolving "search" behavior in UR-F02 requires:
 
 * Lower cost of changes: the cost of accommodating changing customer requirements is reduced, and the amount of analysis and documentation that has to be redone is much less than with the waterfall model. 
 
@@ -18,7 +18,7 @@ Sommerville lists concrete benefits of incremental development, and two of them 
 
 * Faster delivery: more rapid delivery and deployment of useful software to the customer is possible, so customers gain value from the software earlier than with a waterfall process.
 
-## Applied to Section 5.4
+## Applied to UR-F02
 The requirement "a user shall be able to search the appointments lists for all clinics" specifies that search must exist but not how it should behave — by name, by date range, by clinic, by status, etc. Under waterfall, that ambiguity would have to be fully resolved on paper before any code is written, because the waterfall model's main drawback is the difficulty of accommodating change once the process is underway. Under incremental development, a first version of the search feature can be built with a reasonable guess at behavior, shown to clinic staff, and revised — because specification and validation are not locked in sequence but interleaved, each round of user feedback can directly reshape the next increment's specification. 
 
 ## Stage 3 — Incremental / Agile
