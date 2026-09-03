@@ -34,7 +34,7 @@ Mentcare is a medical information system that maintains information about patien
 ---
 
 ## 3. User / Functional Requirements
-# Edit by Sokchea (add columns to easy to understand about requirements)
+## Edit by Sokchea (add columns to easy to understand about requirements)
 
 | ID | Requirement | Reference Text |
 | :--- | :--- | :--- |

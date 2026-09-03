@@ -321,7 +321,7 @@ Use Git LFS when:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/Case-Study-Document-Collaboration.git
+git clone https://github.com/GIT-chea002/Case-Study-Document-Collaboration.git
 ```
 
 ### Enter the Repository
