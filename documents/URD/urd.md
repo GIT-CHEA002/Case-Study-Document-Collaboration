@@ -31,6 +31,7 @@ Two system purposes:
 
 ## 3. User / Functional Requirements
 
+# Edit UF and NUF(match with the references text of the document)
 | ID | Requirement |
 |---|---|
 | UR-F01 | The system generates monthly management reports showing the number of patients treated at each clinic, patients entered/left the care system, patients sectioned (legally detained), and drugs prescribed and their costs. [S4] |
