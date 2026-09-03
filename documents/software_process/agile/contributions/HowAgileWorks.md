@@ -5,14 +5,14 @@ Let us take the **Risk Warning** function as an example.
 Initially, the clinician says:
 
 > “We need to know whether a patient may be dangerous to themselves or others.”
-
+  
 The development team converts this need into a **User Story** and places it in the **Product Backlog**:
-
+  
 > “As a clinician, I want to see a patient's risk status so that I can make safer clinical decisions.”
 
 In the first Sprint, the team builds a simple **Risk Indicator**.
 
-The doctor tests it and provides feedback:
+The doctor tests it and provides feedback: 
 
 > “The warning is difficult to notice.”
 
