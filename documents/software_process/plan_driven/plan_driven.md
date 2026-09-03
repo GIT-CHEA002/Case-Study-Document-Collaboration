@@ -6,7 +6,7 @@ A plan-driven process is one where all activities are planned out in advance, an
 
 The waterfall model is the classic example of a plan-driven model: it is a plan-driven model with separate and distinct phases of specification and development. Those phases are laid out sequentially: requirements analysis and definition, system and software design, implementation and unit testing, integration and system testing, and operation and maintenance. In principle, each phase must be finished before the next one starts — which is precisely what makes it "plan-driven": you commit to a full plan/specification up front rather than discovering requirements as you go.[S0]
 
-## Why the book says waterfall fits this kind of requirement ?
+## Why waterfall fits this kind of requirement ?
 Sommerville's slides give a specific list of situations where waterfall is the better fit: embedded systems where the software has to interface with hardware systems, critical systems where there is a need for extensive safety and security analysis, and large software systems that are part of broader engineering systems.
 
 UR-F07 (suicide/danger warnings, availability for safe prescribing, patient confidentiality, and the two legal regimes — data protection law and mental health law) map directly onto that "critical systems" category:
